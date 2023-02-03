@@ -1,0 +1,67 @@
+=pod
+
+=head1 NAME
+
+shuf - random permutations of input
+
+=head1 SYNOPSIS
+
+B<shuf> [B<-erzhv>] [B<-i> num-num] [B<-n> num] [B<-o> file] [B<--random-source> file] [B<file>]
+
+=head1 DESCRIPTION
+
+Writes permutations of input.
+
+If no [B<file>] is given, shuf reads from stdin.
+
+=head1 OPTIONS
+
+=over
+
+=item B<-e>, B<--echo>
+
+treat every non-option argument as an input line.
+
+=item B<-i>, B<--input-range> B<num>-B<num>
+
+treat each number from B<num> to B<num> as an input line.
+
+=item B<-n>, B<--head-count> B<num>
+
+write at most B<num> lines.
+
+=item B<-o>, B<--output> B<file>
+
+write to B<file> instead of stdout.
+
+=item B<--random-source> B<file>
+
+ignored.
+
+=item B<-r>, B<--repeat> B<file>
+
+ignored.
+
+=item B<-z>, B<--zero-terminated>
+
+use NUL instead of a newline to delimit lines.
+
+=item B<-h>, B<--help>, B<-v>, B<--version>
+
+display help.
+
+=back
+
+=head1 AUTHOR
+
+Written by krzysckh L<[krzysckh.org]|https://krzysckh.org/>.
+
+=head1 COPYRIGHT
+
+Under BSD 2-Clause license.
+
+=head1 SEE ALSO
+
+L<Source code|https://github.com/krzysckh/shuf>
+
+=cut

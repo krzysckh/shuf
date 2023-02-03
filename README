@@ -1,0 +1,25 @@
+shuf
+----
+
+DESCRIPTION
+  implementation of GNU shuf.
+
+INSTALLATION
+  $ make
+  # make install
+
+DEPENDENCIES
+  pod2man
+    - https://man.openbsd.org/pod2man
+  linux users may need libbsd and BSD-compatible make
+    - https://libbsd.freedesktop.org/wiki/
+    - https://www.crufty.net/help/sjg/bmake.html
+
+CAVEATS
+  --random-source and --repeat are ignored
+
+AUTHOR
+  krzysckh <kpm at linux dot pl>
+
+LICENSE
+  BSD 2-clause
