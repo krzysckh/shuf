@@ -105,7 +105,7 @@ int main(int argc, char *argv[]) {
     { "head-count",      required_argument, NULL, 'n' },
     { "output",          required_argument, NULL, 'o' },
     { "random-source",   required_argument, NULL, 's' },
-    { "repeat",          no_argument,       NULL, 'e' },
+    { "repeat",          no_argument,       NULL, 'r' },
     { "zero-terminated", no_argument,       NULL, 'z' },
     { "help",            no_argument,       NULL, 'h' },
     { "version",         no_argument,       NULL, 'v' }
