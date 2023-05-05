@@ -4,7 +4,7 @@ PREFIX = /usr/local
 
 UNAME != uname | tr '[A-Z]' '[a-z]'
 
-CFLAGS = -Wall -Wextra -std=c89 -g
+CFLAGS = -Wall -Wextra -std=c89 -pedantic
 
 .if $(UNAME) == "linux"
 LDFLAGS = -lbsd
@@ -17,7 +17,7 @@ all: manpage $(OFILES)
 manpage:
 	pod2man -s 1 -c $(TARGET) -n $(TARGET) < shuf.pod > shuf.1
 clean:
-	rm -f *.o $(TARGET) shuf.1
+	rm -f *.o $(TARGET) shuf.1 *.core
 install:
 	mkdir -p $(PREFIX)
 	cp $(TARGET) $(PREFIX)/bin

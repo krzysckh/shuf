@@ -172,7 +172,7 @@ int main(int argc, char *argv[]) {
     s = malloc(sizeof(char *) * nl);
     for (i = MIN(irang[0], irang[1]); i <= MAX(irang[0], irang[1]); i++) {
       s[ctr] = malloc(nlen(i));
-      sprintf(s[ctr++], "%d", i);
+      snprintf(s[ctr++], nlen(i) - 1, "%d", i);
     }
   } else {
     if (argv[optind] && strcmp(argv[optind], "-") != 0) {
