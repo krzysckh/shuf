@@ -4,7 +4,7 @@ PREFIX = /usr/local
 
 UNAME != uname | tr '[A-Z]' '[a-z]'
 
-CFLAGS = -Wall -Wextra -std=c89 -pedantic
+CFLAGS = -Wall -Wextra -D_DEFAULT_SOURCE -D_BSD_SOURCE -std=c89 -pedantic
 
 .if $(UNAME) == "linux"
 LDFLAGS = -lbsd
